@@ -1,0 +1,51 @@
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(60, 60, 60, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    border-radius: 3px;
+    padding-bottom: 20px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid #999;
+}
+
+.head button {
+    padding: 8px;
+    font-size: 13px;
+}
+
+.content {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.content .intro {
+    font-size: 14px;
+}
+
+.content ul {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.content ul li {
+    margin: 10px;
+}

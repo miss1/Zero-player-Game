@@ -8,15 +8,12 @@ function goto(link) {
 </script>
 
 <template>
-  <h2>Zero-player game</h2>
-  <button class="btn-select" @click="goto('/life')">Conway's Game of Life</button>
-  <button class="btn-select" @click="goto('/ant')">Langton's ant</button>
+  <div class="home">
+    <h2>Zero-player game</h2>
+    <button class="btn-select" @click="goto('/life')">Conway's Game of Life</button>
+  </div>
 </template>
 
 <style scoped>
-.btn-select {
-  display: block;
-  margin: 10px auto;
-}
-/*@import './index.scss';*/
+@import './Home.css';
 </style>

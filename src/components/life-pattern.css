@@ -1,0 +1,25 @@
+.live {
+    background-color: black;
+}
+
+.dead {
+    background-color: white;
+}
+
+td {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.pattern {
+    border-bottom: 1px solid #999;
+    padding: 10px 0;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
