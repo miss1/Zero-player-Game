@@ -1,18 +1,17 @@
 <script setup>
 import LifePattern from './Life-pattern.vue'
+import {onMounted, ref} from "vue";
 
 const props = defineProps({
   toggleLexicon: Function,
 })
 
-const pattern1 = [
-  [false, true, false], [true, false, false], [true, true, true],
-  [false, false, false], [false, false, false],
-  [false, true, true], [true, false, true], [false, false, true]
-]
-const pattern2 = [
+let patterns = []
 
-]
+onMounted(async () => {
+  const response = await fetch('/pattern.json')
+  patterns = await response.json()
+})
 
 const emits = defineEmits(['applyPattern'])
 
@@ -31,8 +30,7 @@ function applyPattern(pattern) {
         <button @click="toggleLexicon">Close</button>
       </div>
       <div>
-        <LifePattern :grid="pattern1" @click="applyPattern(pattern1)"/>
-        <LifePattern :grid="pattern1"/>
+        <LifePattern v-for="pattern in patterns" :key="pattern.name" :grid="pattern" @click="applyPattern(pattern.pattern)"/>
       </div>
     </div>
   </div>

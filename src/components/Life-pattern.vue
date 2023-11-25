@@ -1,15 +1,16 @@
 <script setup>
 
 defineProps({
-  grid: Array,
+  grid: Object,
 })
 
 </script>
 
 <template>
   <div class="pattern">
+    <span>{{grid.name}}</span>
     <table>
-      <tr v-for="row in grid">
+      <tr v-for="row in grid.pattern">
         <td v-for="col in row" :class="[col ? 'live' : 'dead']"></td>
       </tr>
     </table>
