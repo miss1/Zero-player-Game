@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHashHistory} from 'vue-router'
 import './style.css'
 import App from './App.vue'
 import Home from './view/Home.vue'
@@ -13,7 +13,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/Zero-player-Game'),
+  history: createWebHashHistory('/Zero-player-Game'),
   routes,
 })
 

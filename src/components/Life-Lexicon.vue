@@ -9,7 +9,7 @@ const props = defineProps({
 let patterns = []
 
 onMounted(async () => {
-  const response = await fetch('/pattern.json')
+  const response = await fetch('./pattern.json')
   patterns = await response.json()
 })
 
