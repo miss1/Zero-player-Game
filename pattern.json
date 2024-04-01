@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Glider",
+    "pattern": [[false, true, false], [true, false, false], [true, true, true]]
+  },
+  {
+    "name": "The R-pentomino",
+    "pattern": [[false, true, true], [true, true, false], [false, true, false]]
+  },
+  {
+    "name": "Gosper glider gun",
+    "pattern": [
+      [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, true, true],
+      [false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, true, true],
+      [true, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+      [true, true, false, false, false, false, false, false, false, false, true, false, false, false, true, false, true, true, false, false, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    ]
+  },
+  {
+    "name": "Pulsar (period 3)",
+    "pattern": [
+      [false, false, true, true, true, false, false, false, true, true, true, false, false],
+      [false, false, false, false, false, false, false, false, false, false, false, false, false],
+      [true, false, false, false, false, true, false, true, false, false, false, false, true],
+      [true, false, false, false, false, true, false, true, false, false, false, false, true],
+      [true, false, false, false, false, true, false, true, false, false, false, false, true],
+      [false, false, true, true, true, false, false, false, true, true, true, false, false],
+      [false, false, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, true, true, true, false, false, false, true, true, true, false, false],
+      [true, false, false, false, false, true, false, true, false, false, false, false, true],
+      [true, false, false, false, false, true, false, true, false, false, false, false, true],
+      [true, false, false, false, false, true, false, true, false, false, false, false, true],
+      [false, false, false, false, false, false, false, false, false, false, false, false, false],
+      [false, false, true, true, true, false, false, false, true, true, true, false, false]
+    ]
+  },
+  {
+    "name": "Penta-decathlon (period 15)",
+    "pattern": [
+      [true, true, true], [true, false, true], [true, true, true],
+      [true, true, true], [true, true, true], [true, true, true],
+      [true, false, true], [true, true, true]
+    ]
+  }
+]
